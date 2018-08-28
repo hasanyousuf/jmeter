@@ -33,7 +33,7 @@
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">192.168.1.3</stringProp>
+        <stringProp name="HTTPSampler.domain">192.168.1.7</stringProp>
         <stringProp name="HTTPSampler.port">9000</stringProp>
         <stringProp name="HTTPSampler.protocol"></stringProp>
         <stringProp name="HTTPSampler.contentEncoding"></stringProp>
@@ -468,59 +468,7 @@
           <stringProp name="filename">/Users/hasan/sandbox/personal/cakejmeter/project/repo/HTML/cake.csv</stringProp>
         </ResultCollector>
         <hashTree/>
-        <JSR223Assertion guiclass="TestBeanGUI" testclass="JSR223Assertion" testname="JSR223 Assertion" enabled="false">
-          <stringProp name="cacheKey">true</stringProp>
-          <stringProp name="filename"></stringProp>
-          <stringProp name="parameters"></stringProp>
-          <stringProp name="script">if (Boolean.valueOf(vars.get(&quot;DEBUG&quot;))) {
-  for (a: SampleResult.getAssertionResults()) {
-    if (a.isError() || a.isFailure()) {
-      log.error(Thread.currentThread().getName()+&quot;: &quot;+SampleLabel+&quot;: Assertion failed for response: &quot; + new String((byte[]) ResponseData));
-    }
-  }
-}</stringProp>
-          <stringProp name="scriptLanguage">groovy</stringProp>
-        </JSR223Assertion>
-        <hashTree/>
       </hashTree>
-      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
-        <objProp>
-          <name>saveConfig</name>
-          <value class="SampleSaveConfiguration">
-            <time>true</time>
-            <latency>true</latency>
-            <timestamp>true</timestamp>
-            <success>true</success>
-            <label>true</label>
-            <code>true</code>
-            <message>true</message>
-            <threadName>true</threadName>
-            <dataType>true</dataType>
-            <encoding>false</encoding>
-            <assertions>true</assertions>
-            <subresults>true</subresults>
-            <responseData>false</responseData>
-            <samplerData>false</samplerData>
-            <xml>false</xml>
-            <fieldNames>true</fieldNames>
-            <responseHeaders>false</responseHeaders>
-            <requestHeaders>false</requestHeaders>
-            <responseDataOnError>false</responseDataOnError>
-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-            <assertionsResultsToSave>0</assertionsResultsToSave>
-            <bytes>true</bytes>
-            <sentBytes>true</sentBytes>
-            <threadCounts>true</threadCounts>
-            <idleTime>true</idleTime>
-            <connectTime>true</connectTime>
-          </value>
-        </objProp>
-        <stringProp name="filename">/Users/hasan/sandbox/personal/cakejmeter/project/repo/HTML/cake</stringProp>
-      </ResultCollector>
-      <hashTree/>
-      <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
-      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
