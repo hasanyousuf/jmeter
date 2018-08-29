@@ -35,13 +35,13 @@
 
   <Loggers>
 
-    <!--<Root level="info">
+    <Root level="info">
       <AppenderRef ref="jmeter-log" />
       <AppenderRef ref="gui-log-event" />
-    </Root>-->
+    </Root>
 
     <Logger name="org.apache.jmeter.junit" level="debug" />
-    
+    <!--
     <Logger name="org.apache.jmeter.control" level="debug" />
     <Logger name="org.apache.jmeter.testbeans" level="debug" />
     <Logger name="org.apache.jmeter.engine" level="debug" />
@@ -50,7 +50,7 @@
     <Logger name="org.apache.jmeter.testelement" level="debug" />
     <Logger name="org.apache.jmeter.util" level="warn" />
     <Logger name="org.apache.jmeter.protocol.http" level="debug" />
-  
+    -->
     <!-- # For CookieManager, AuthManager etc: -->
     <!--
     <Logger name="org.apache.jmeter.protocol.http.control" level="debug" />
