@@ -57,8 +57,8 @@ If server is not reset, reports will have lot of failsure of creation of users.
  - Click on "Workspace" and navigate to project /repo/Report/
  - Click "all files in zip"
  - Download the the zip file & unzip and open index.html
- ![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/9.png)
  ![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/10.png)
+ ![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/9.png)
 
 
 
