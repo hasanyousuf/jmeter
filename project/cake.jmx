@@ -35,12 +35,22 @@
           </elementProp>
           <elementProp name="responseTime" elementType="Argument">
             <stringProp name="Argument.name">responseTime</stringProp>
-            <stringProp name="Argument.value">1000</stringProp>
+            <stringProp name="Argument.value">${__P(ResponseTime)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
-          <elementProp name="thread" elementType="Argument">
-            <stringProp name="Argument.name">thread</stringProp>
-            <stringProp name="Argument.value">1</stringProp>
+          <elementProp name="http-protocol" elementType="Argument">
+            <stringProp name="Argument.name">http-protocol</stringProp>
+            <stringProp name="Argument.value">${__P(Http)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="server-url" elementType="Argument">
+            <stringProp name="Argument.name">server-url</stringProp>
+            <stringProp name="Argument.value">${__P(Server)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="server-port" elementType="Argument">
+            <stringProp name="Argument.name">server-port</stringProp>
+            <stringProp name="Argument.value">${__P(Port)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
         </collectionProp>
@@ -64,9 +74,9 @@
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
-        <stringProp name="HTTPSampler.domain">192.168.1.3</stringProp>
-        <stringProp name="HTTPSampler.port">9000</stringProp>
-        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.domain">${server-url}</stringProp>
+        <stringProp name="HTTPSampler.port">${server-port}</stringProp>
+        <stringProp name="HTTPSampler.protocol">${http-protocol}</stringProp>
         <stringProp name="HTTPSampler.contentEncoding">utf-8</stringProp>
         <stringProp name="HTTPSampler.path"></stringProp>
         <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
