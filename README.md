@@ -32,11 +32,12 @@ echo $USERS_TREADS $RAMPUP_TIME $LOOP $SERVER_ADDRESS $SERVER_PORT $HTTP_PROTOCO
 * Press "Apply" button
 * Press "Save" button
 
-![alt text](https://github.com/hasanyousuf/jmeter/tree/master/project/images/1.png)
-![alt text](https://github.com/hasanyousuf/jmeter/tree/master/project/images/2.png)
-![alt text](https://github.com/hasanyousuf/jmeter/tree/master/project/images/3.png)
-![alt text](https://github.com/hasanyousuf/jmeter/tree/master/project/images/4.png)
-![alt text](https://github.com/hasanyousuf/jmeter/tree/master/project/images/5.png)
+![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/1.png)
+![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/2.png)
+![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/3.png)
+![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/4.png)
+![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/5.png)
+
 
 # Following commands should be executed to build the project
   - Make sure API up and running
