@@ -41,6 +41,38 @@ echo $USERS_TREADS $RAMPUP_TIME $LOOP $SERVER_ADDRESS $SERVER_PORT $HTTP_PROTOCO
 ![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/7.png)
 ![alt text](https://github.com/hasanyousuf/jmeter/blob/master/project/images/8.png)
 
+# Project feature
+  - It is jmeter project
+  - Can be integrated with Jenkins
+  _ Can be integrated in build pipe line in Jenkins
+  _ Reading data dynamically from cvs files
+  - User can set virtaul users, Rampup time, Loop, server, server port address using Jenkins
+  - As Jmeter has support for 1000 current user, so this project also support to have 1000 users concurrently ideally
+  - Project also support to send command to distributed slave machines (It is not enabled yet)
+  _ It generate HTML reports dashboard
+  _ Performance reports are visible in jenkins job
+  
+# Project limitations
+  _ Project can be maven project and all dependencies should be handeld by maven
+  _ Currently project is not moduler
+  _ CVS file have 250 users only
+  _ Tests will be executed on all endpoints with same number of users
+  _ HTML report should be downloaed to view actual report 
+  _ Jmeter logs can not changed to debug/errors
+
+# Project  struture
+  _  Root folder of project
+  	- runTest.sh (project executiong file)
+  	_ jmeeter.log (jmeter logs)
+  	_ apache-jmeter-4.0 (Jmeter tools with all dependencies related to current project)
+  	_ project (project code)
+  		_ data/user.csv (user data being used in testing)
+  		_ cake.jms (Test plan)
+  		- images (images to setup using jenkins/Report)
+  		_ repo/HTML/cake.csv (Test results which are being used in reports)
+  		- repo/HTML/aggregateReport.csv (Aggregate report) (Currently not being to have separate graphs)
+  		- repo/Reports/ (directory where project HTML report is generated)
+
 # Following commands should be executed to build the project
   - Make sure API up and running
   - Select the job "DemoJmeter"
