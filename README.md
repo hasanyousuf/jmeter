@@ -54,6 +54,7 @@ echo $USERS_TREADS $RAMPUP_TIME $LOOP $SERVER_ADDRESS $SERVER_PORT $HTTP_PROTOCO
   
 # Project limitations
   - Project can be maven project and all dependencies should be handeld by maven
+  - The behaviour of requests to REST API should be closer to real one
   - Currently project is not moduler
   - CVS file have 250 users only
   - Tests will be executed on all endpoints with same number of users
